@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us Form</title>
+</head>
+<body>
+        <h2>Fill this form to Contact with us</h2>
+        
+        <form action="">
+
+            <label for="fname">Enter Full Name: </label>
+            <input type="text" name="fname" id="fname" placeholder="Full Name"><br><br>
+
+            <label for="email">Enter your E-mail ID:</label>
+            <input type="email" name="mail" id="mail" placeholder="E-mail"><br><br>
+
+            <label for="password">Password: </label>
+            <input type="password" name="password" id="password" placeholder="Password"><br><br>
+
+            <label for="age">Age: </label>
+            <input type="number" name="age" id="age"><br><br>
+
+            <label for="message">Enter Message: </label>
+            <textarea rows="5" cols="25" name="message">
+            </textarea><br><br>
+
+            <label for="gender">Gender: </label>
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female <br><br>
+
+            <label for="country">Country</label>
+            <select name="country" id="country">
+                <option value="India">India</option>
+                <option value="USA">USA</option>
+                <option value="Canada">Canada</option>
+            </select><br><br>
+
+            <input type="checkbox">
+            <label for="tc">I agree Terms and Conditions</label><br><br>
+
+            <input type="Submit" onclick="alert('Name: ' + fname.value + '\nE-mail: ' + mail.value + '\nPassword: ' + password.value + '\nAge: ' + age.value + '\nGender: ' + gender.value + '\nCountry: ' + country.value)" name="Submit"/>
+            <input type="reset" onclick="alert('Form Reset')" name="reset"/>
+
+
+            
+        </form>
+</body>
+</html>
